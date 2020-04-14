@@ -1,6 +1,11 @@
+* -*- comment-start: "*" -*-
+
+* most important changes first
 [bspace]>[space]
 [space]>[bspace]
 [delete]>[lctrl]
+
+* better modifier keys
 [end]>[lalt]
 [lalt]>[home]
 [home]>[end]
@@ -8,3 +13,10 @@
 [rwin]>[pup]
 [pup]>[pdown]
 [pdown]>[rwin]
+
+* vi-style arrow keys + move brackets to left hand
+[obrack]>[up]
+[cbrack]>[right]
+[up]>[left]
+[left]>[obrack]
+[right]>[cbrack]
