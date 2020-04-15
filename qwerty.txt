@@ -5,6 +5,10 @@
 [space]>[bspace]
 [delete]>[lctrl]
 
+* still not using vi, but this is a smart switch
+[caps]>[escape]
+[escape]>[caps]
+
 * better modifier keys
 [end]>[lalt]
 [lalt]>[home]
