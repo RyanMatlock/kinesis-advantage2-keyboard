@@ -13,7 +13,7 @@
 [end]>[lalt]
 [lalt]>[home]
 [home]>[end]
-[intl-\]>[lwin]
+* [intl-\]>[lwin]  ** conflicts w/new hyphen location
 [rwin]>[pup]
 [pup]>[pdown]
 [pdown]>[rwin]
@@ -24,3 +24,9 @@
 [up]>[left]
 [left]>[obrack]
 [right]>[cbrack]
+
+* put = and hyphen in easier-to-reach places
+[`]>[=]
+[intl-l]>[hyphen]  ** undo (「C-_」) will take a little getting used to
+[=]>[`]  ** used to it being there anyway
+[hyphen]>[ralt]  ** gives me a meta key on RHS; easier for 「M-x」
