@@ -27,6 +27,6 @@
 
 * put = and hyphen in easier-to-reach places
 [`]>[=]
-[intl-l]>[hyphen]  ** undo (「C-_」) will take a little getting used to
+[intl-\]>[hyphen]  ** undo (「C-_」) will take a little getting used to
 [=]>[`]  ** used to it being there anyway
 [hyphen]>[ralt]  ** gives me a meta key on RHS; easier for 「M-x」
