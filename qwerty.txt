@@ -1,24 +1,27 @@
 * -*- comment-start: "*" -*-
 
-* most important changes first
+* most important changes first: SPC <-> BSPC, DEL -> CTRL
 [bspace]>[space]
 [space]>[bspace]
 [delete]>[lctrl]
 
-* still not using vi, but this is a smart switch
+* ESC <-> CAPS (still not using vi, but this is a smart switch)
 [caps]>[escape]
 [escape]>[caps]
 
 * left thumb cluster small buttons
-[lctrl]>[lalt]
+[lctrl]>[lalt]  ** pretty good for 「M-w」
 [lalt]>[home]
 [home]>[end]
-[end]>[lwin]
+[end]>[lwin]  ** nice having command keys in each cluster
 
 * right thumb cluster small buttons
+** keeping R-CTRL for setting marks, i.e. 「C-SPC」
 [rwin]>[pup]
 [pup]>[pdown]
 [pdown]>[rwin]
+
+** Do I really need HOME, END, PGUP, PGDN? I never use them…
 
 * vi-style arrow keys + move brackets to left hand
 [obrack]>[up]
@@ -27,8 +30,8 @@
 [left]>[obrack]
 [right]>[cbrack]
 
-* put = and hyphen in easier-to-reach places
+* put = and hyphen in easier-to-reach places below Z and X
 [`]>[=]
-[intl-\]>[hyphen]  ** undo (「C-_」) will take a little getting used to
+[intl-\]>[hyphen]
 [=]>[`]  ** used to it being there anyway
 [hyphen]>[ralt]  ** gives me a meta key on RHS; easier for 「M-x」
