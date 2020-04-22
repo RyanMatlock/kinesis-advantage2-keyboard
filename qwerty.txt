@@ -9,11 +9,13 @@
 [caps]>[escape]
 [escape]>[caps]
 
-* better modifier keys
-[end]>[lalt]
+* left thumb cluster small buttons
+[lctrl]>[lalt]
 [lalt]>[home]
 [home]>[end]
-* [intl-\]>[lwin]  ** conflicts w/new hyphen location
+[end]>[lwin]
+
+* right thumb cluster small buttons
 [rwin]>[pup]
 [pup]>[pdown]
 [pdown]>[rwin]
