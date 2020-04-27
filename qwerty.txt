@@ -14,7 +14,7 @@
 * left thumb cluster small buttons
 [lctrl]>[lalt]  ** pretty good for 「M-w」
 [lalt]>[home]
-* [home]>[end]  ** going to make this a "hyper" key
+[home]>[end]
 [end]>[lwin]  ** nice having command keys in each cluster
 
 * right thumb cluster small buttons
@@ -44,8 +44,8 @@
 * together, so let's give it a shot). Home/end seem the least useful, so maybe
 * replace those first?
 
-* Command + Alt shortcut (my "hyper" key)
-{home}>{+lalt}{lwin}{-lalt}
+* * Command + Alt shortcut (my "hyper" key)
+* {home}>{+lalt}{lwin}{-lalt}  ** doesn't work
 
 ** keypad layer
 
