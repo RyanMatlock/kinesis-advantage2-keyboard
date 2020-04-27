@@ -1,5 +1,7 @@
 * -*- comment-start: "*" -*-
 
+** main layer
+
 * most important changes first: SPC <-> BSPC, DEL -> CTRL
 [bspace]>[space]
 [space]>[bspace]
@@ -21,8 +23,6 @@
 [pup]>[pdown]
 [pdown]>[rwin]
 
-** Do I really need HOME, END, PGUP, PGDN? I never use them…
-
 * vi-style arrow keys + move brackets to left hand
 [obrack]>[up]
 [cbrack]>[right]
@@ -35,3 +35,16 @@
 [intl-\]>[hyphen]
 [=]>[`]  ** used to it being there anyway
 [hyphen]>[ralt]  ** gives me a meta key on RHS; easier for 「M-x」
+
+* Do I really need HOME, END, PGUP, PGDN? I never use them…
+* Answer: Maybe. They're actually nice to use instead of scrolling, although
+* you could make "super" and "hyper" keys with macros, which could actually be
+* useful. Home/end seem the least useful, so maybe replace those first?
+
+** keypad layer
+
+* WASD arrows
+[kp-w]>[up]
+[kp-a]>[left]
+[kp-s]>[down]
+[kp-d]>[right]
