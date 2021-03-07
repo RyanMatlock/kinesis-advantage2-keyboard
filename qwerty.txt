@@ -14,7 +14,9 @@
 * left thumb cluster small buttons
 [lctrl]>[lalt]  ** pretty good for 「M-w」
 [lalt]>[home]
-[home]>[end]
+* [home]>[end]
+* hold old [home] to "keypad shift" (temporarily switch to keypad layer)
+[home]>[kp_switch]
 [end]>[lwin]  ** nice having command keys in each cluster
 
 * right thumb cluster small buttons
