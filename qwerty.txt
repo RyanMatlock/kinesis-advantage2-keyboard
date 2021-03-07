@@ -13,10 +13,7 @@
 
 * left thumb cluster small buttons
 [lctrl]>[lalt]  ** pretty good for 「M-w」
-[lalt]>[home]
-* [home]>[end]
-* hold old [home] to "keypad shift" (temporarily switch to keypad layer)
-[home]>[kp_switch]
+[lalt]>[delete]
 [end]>[lwin]  ** nice having command keys in each cluster
 
 * right thumb cluster small buttons
@@ -41,6 +38,18 @@
 * * Command + Alt shortcut (my "hyper" key)
 * {home}>{+lalt}{lwin}{-lalt}  ** doesn't work
 
+** keypad layer shift/toggle
+
+* hold old [home] to "keypad shift" (temporarily switch to keypad layer)
+[home]>[kpshift]
+* per User's Manual (01-07-19) §13.1, footnote 2: in order for kpshift to work,
+* it must be mapped to both layers
+[kp-home]>[kpshift]
+
+* keypad layer toggle on old caps/current esc
+* aka big red key (on my keyboards) makes things normal
+[kp-caps]>[kptoggle]
+
 ** keypad layer
 
 * right hand tab, space, backspace
@@ -48,8 +57,16 @@
 [kp-y]>[space]
 [kp-n]>[bspace]
 
-* WASD arrows
-[kp-w]>[up]
-[kp-a]>[left]
-[kp-s]>[down]
-[kp-d]>[right]
+* map home/end over new pgup/pgdown
+[kp-rwin]>[home]
+[kp-pup]>[end]
+
+* brackets instead of arrows
+[kp-up]>[obrack]
+[kp-down]>[cbrack]
+
+* vi-style arrows on LHS bottom row
+[kp-`]>[left]
+[kp-insert]>[down]
+[kp-left]>[up]
+[kp-right]>[right]
