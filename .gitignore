@@ -1,0 +1,5 @@
+# Org mode/LaTeX output
+*.html
+*.tex
+*.pdf
+auto/
