@@ -70,3 +70,13 @@
 [kp-insert]>[down]
 [kp-left]>[up]
 [kp-right]>[right]
+
+* volume controls on LHS
+[kp-c]>[mute]
+[kp-v]>[vol-]
+[kp-b]>[vol+]
+
+* media controls on LHS
+[kp-d]>[prev]
+[kp-f]>[play]
+[kp-g]>[next]
