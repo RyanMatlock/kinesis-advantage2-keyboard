@@ -1,82 +1,82 @@
-* -*- comment-start: "*" -*-
+* -*- mode: prog, comment-start: "*" -*-
 
-** main layer
+* MAIN LAYER
 
-* most important changes first: SPC <-> BSPC, DEL -> CTRL
+** Left Thumb Cluster
 [bspace]>[space]
-[space]>[bspace]
 [delete]>[lctrl]
-
-* ESC <-> CAPS (still not using vi, but this is a smart switch)
-[caps]>[escape]
-[escape]>[caps]
-
-* left thumb cluster small buttons
-[lctrl]>[lalt]  ** pretty good for 「M-w」
+[lctrl]>[lalt]
 [lalt]>[delete]
-[end]>[lwin]  ** nice having command keys in each cluster
+[home]>[kpshift] ** must be shifted in KEYPAD LAYER; see
+                 ** User's Manual (01-07-19) §13.1, footnote 2
+[end]>[lwin]
 
-* right thumb cluster small buttons
-** keeping R-CTRL for setting marks, i.e. 「C-SPC」
-[rwin]>[pup]
-[pup]>[pdown]
+** Right Thumb Cluster
+[rwin]>[ralt]
+[rctrl]>[tab]
+[pup]>[rctrl]
 [pdown]>[rwin]
+[space]>[bspace]
 
-* vi-style arrow keys + move brackets to left hand
-[obrack]>[up]
-[cbrack]>[right]
-[up]>[left]
+** Left Hand Pinkie Column
+[caps]>[escape]
+[=]>[`]
+
+** Left Hand Bottom Row
+[`]>[=]
+[intl-\]>[hyphen]
 [left]>[obrack]
 [right]>[cbrack]
 
-* put = and hyphen in easier-to-reach places below Z and X
-[`]>[=]
-[intl-\]>[hyphen]
-[=]>[`]  ** used to it being there anyway
-[hyphen]>[ralt]  ** gives me a meta key on RHS; easier for 「M-x」
+** Right Hand Pinkie Column
+[hyphen]>[ralt]
 
-* * Command + Alt shortcut (my "hyper" key)
-* {home}>{+lalt}{lwin}{-lalt}  ** doesn't work
+** Right Hand Bottom Row
+[obrack]>[up]
+[cbrack]>[right]
+[up]>[left]
+** Note: [down] doesn't move
 
-** keypad layer shift/toggle
+** Function Row
+[escape]>[caps]
 
-* hold old [home] to "keypad shift" (temporarily switch to keypad layer)
-[home]>[kpshift]
-* per User's Manual (01-07-19) §13.1, footnote 2: in order for kpshift to work,
-* it must be mapped to both layers
-[kp-home]>[kpshift]
+*******************************************************************************
+* KEYPAD LAYER
 
-* keypad layer toggle on old caps/current esc
-* aka big red key (on my keyboards) makes things normal
+** Left Thumb Cluster
+[kp-home]>[kpshift] ** mirrored in MAIN LAYER
+[kp-lalt]>[insert]
+
+** Right Thumb Cluster
+
+** Left Hand Pinkie Column
 [kp-caps]>[kptoggle]
 
-** keypad layer
+** Left Hand Bottom Row
+[kp-`]>[home]
+[kp-insert]>[end]
+[kp-left]>[pup]
+[kp-right]>[pdown]
 
-* right hand tab, space, backspace
+** Left Hand Volume & Media Controls
+[kp-c]>[mute]
+[kp-v]>[vol-]
+[kp-b]>[vol+]
+[kp-d]>[prev]
+[kp-f]>[play]
+[kp-g]>[next]
+
+** Right Hand Pinkie Column
+
+** Right Hand Bottom Row
+[kp-up]>[null]
+[kp-down]>[null]
+
+* Right Hand Tab, Space, Backspace
 [kp-h]>[tab]
 [kp-y]>[space]
 [kp-n]>[bspace]
 
-* map home/end over new pgup/pgdown
-[kp-rwin]>[home]
-[kp-pup]>[end]
+** Function Keys
 
-* brackets instead of arrows
-[kp-up]>[obrack]
-[kp-down]>[cbrack]
 
-* vi-style arrows on LHS bottom row
-[kp-`]>[left]
-[kp-insert]>[down]
-[kp-left]>[up]
-[kp-right]>[right]
-
-* volume controls on LHS
-[kp-c]>[mute]
-[kp-v]>[vol-]
-[kp-b]>[vol+]
-
-* media controls on LHS
-[kp-d]>[prev]
-[kp-f]>[play]
-[kp-g]>[next]
