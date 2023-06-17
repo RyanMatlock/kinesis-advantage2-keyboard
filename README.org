@@ -11,6 +11,11 @@ different on Linux and Windows.] e.g.
   $ cp /path/to/qwerty.txt /Volumes/ADVANTAGE2/active/qwerty.txt
 #+end_src
 
+** How to manually configure the keyboard
+See [[https://www.kinesis-ergo.com/wp-content/uploads/Adv2-Users-Manual-01-07-19_us.pdf][Kinesis Advantage2 User Manual (01-07-19) § 13.1 Map of Key Location Tokens
+and Dictionary of Key Action Tokens]] for a table of key names and tokens
+understood by the remapping software.
+
 * Layout
 #+name: fig:current-layout
 #+caption: Current layout as of [2023-06-16 Fri] (source: [[http://www.keyboard-layout-editor.com][keyboard-layout-editor.com]])
@@ -29,44 +34,3 @@ different on Linux and Windows.] e.g.
 
 ** TODO COMMENT Changes
 *** TODO Write script to convert from CSV to =qwerty.txt=
-
-* COMMENT Key Actions and Tokens
-
-** Function Keys
-
-| Key Action | Token |
-|------------+-------|
-| F1         | F1    |
-| ⋮          | ⋮     |
-| F24        | F24   |
-
-** Number Keys
-
-| Key Action | Token |
-|------------+-------|
-| 1!         |     1 |
-| 2@         |     2 |
-| 3#         |     3 |
-| 4$         |     4 |
-| 5%         |     5 |
-| 6^         |     6 |
-| 7&         |     7 |
-| 8*         |     8 |
-| 9(         |     9 |
-| 0)         |     0 |
-
-** Letter Keys
-| Key Action | Token |
-|------------+-------|
-| A          | A     |
-| ⋮          | ⋮     |
-| Z          | Z     |
-
-** Symbol Keys
-
-| Key Action      | Token  |
-|-----------------+--------|
-| `~ (tilde key)  | `      |
-| -_ (hyphen key) | hyphen |
-| ​=+              | ​=      |
-
