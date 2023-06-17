@@ -1,12 +1,36 @@
-* Personal configuration files for Kinesis Advantage2 Keyboard
+#+title: Kinesis Advantage2 keyboard configuration
 
-** Adding new configuration
-To use (at least on Mac), connect keyboard as USB storage device by first
-enabling Power User Mode with ~PROGM + SHIFT + ESC~, then connect the v-Drive
-with ~PROGM + F1~. From there, copy the desired configuration files to
-~/Volumes/ADVANTAGE2/active/~.
+* Adding new configuration
+To use , connect keyboard as USB storage device by first enabling Power User
+Mode with =PROGM + SHIFT + ESC=, then connect the v-Drive with =PROGM + F1=. From
+there, copy the desired configuration files to
+=/Volumes/ADVANTAGE2/active/=,[fn::This is the drive path on MacOS; it will be
+different on Linux and Windows.] e.g.
 
-* Key Actions and Tokens
+#+begin_src shell
+  $ cp /path/to/qwerty.txt /Volumes/ADVANTAGE2/active/qwerty.txt
+#+end_src
+
+* Layout
+#+name: fig:current-layout
+#+caption: Current layout as of [2023-06-16 Fri] (source: [[http://www.keyboard-layout-editor.com][keyboard-layout-editor.com]])
+[[./keyboard-layout-editor.com/png/kinesis-advantage2-color.png]]
+
+#+name: fig:default-layout
+#+caption: Default layout (source: [[http://www.keyboard-layout-editor.com][keyboard-layout-editor.com]])
+[[./keyboard-layout-editor.com/png/default-kinesis-advantage2-layout.png]]
+
+** COMMENT Links
+(Probably won't work because I think the key length is too long)
+
+[[http://www.keyboard-layout-editor.com/##@_name=Kinesis%20Advantage2&author=Ryan%20Matlock%3B&@_f:1&w:0.675&h:0.85%3B&=status%0ACaps<br>Lock&_x:0.07499999999999996&f2:2&w:0.675&h:0.85%3B&=%0AF1&_x:0.07499999999999996&w:0.675&h:0.85%3B&=%0AF2&_x:0.07500000000000018&w:0.675&h:0.85%3B&=qwert%0AF3&_x:0.07500000000000018&w:0.675&h:0.85%3B&=dvork%0AF4&_x:0.07500000000000018&w:0.675&h:0.85%3B&=mac%0AF5&_x:0.07500000000000018&w:0.675&h:0.85%3B&=pc%0AF6&_x:0.07500000000000018&w:0.675&h:0.85%3B&=win%0AF7&_x:0.07500000000000018&w:0.675&h:0.85%3B&=%0AF8%0A%0A%0A%0A%0A%0A%0Aclick<br>TONE&_x:4.825&w:0.675&h:0.85%3B&=RESET%0AF9&_x:0.07499999999999929&w:0.675&h:0.85%3B&=macro<br>speed%0AF10&_x:0.07499999999999929&w:0.675&h:0.85%3B&=progm<br>macro%0AF11&_x:0.07499999999999929&w:0.675&h:0.85%3B&=progm<br>remap%0AF12&_x:0.07499999999999929&w:0.675&h:0.85%3B&=PrintScr%20SysReq&_x:0.07499999999999929&w:0.675&h:0.85%3B&=Scroll<br>lock&_x:0.07499999999999929&w:0.675&h:0.85%3B&=Pause%20Break&_x:0.07499999999999929&w:0.675&h:0.85%3B&=keypad&_x:0.07499999999999929&w:0.675&h:0.85%3B&=progm%3B&@_x:2.25&f:3%3B&=%2F@%0A2&=%23%0A3&=$%0A4&=%25%0A5&_x:5.5%3B&=%5E%0A6&=%2F&%0A7%0A%0A%0ANm%20Lk&=*%0A8%0A%0A%0A%2F=&=(%0A9%0A%0A%0A%2F=%3B&@_y:-0.75&w:1.25%3B&=~%0A%60&=!%0A1&_x:13.5%3B&=)%0A0%0A%0A%0A*&_w:1.25%3B&=Meta%0A⌥%3B&@_y:-0.25&x:2.25&f:6%3B&=W&=E&=R&=T&_x:5.5&a:0%3B&=Y%0A%0A%0A%0ASpace&_a:4%3B&=U%0A%0A%0A%0A7&=I%0A%0A%0A%0A8&=O%0A%0A%0A%0A9%3B&@_y:-0.75&a:6&f:3&w:1.25%3B&=Tab&_a:4&f:6%3B&=Q&_x:13.5%3B&=P%0A%0A%0A%0A-&_f:3&w:1.25%3B&=%7C%0A%5C%3B&@_y:-0.25&x:2.25&f:6%3B&=S&=D%0A%0A%0A%0A⏮&=F%0A%0A%0A%0A⏯&=G%0A%0A%0A%0A⏭&_x:5.5&a:0%3B&=H%0A%0A%0A%0ATab&_a:4%3B&=J%0A%0A%0A%0A4&=K%0A%0A%0A%0A5&=L%0A%0A%0A%0A6%3B&@_y:-0.75&a:2&f:3&w:1.25%3B&=Esc%0A%0A%0A%0AShift%20Layer&_a:4&f:6%3B&=A&_x:13.5&f:3%3B&=%2F:%0A%2F%3B%0A%0A%0A+&_w:1.25%3B&="%0A'%3B&@_y:-0.25&x:2.25&f:6%3B&=X&=C%0A%0A%0A%0AMute&=V%0A%0A%0A%0AVol-&=B%0A%0A%0A%0AVol+&_x:5.5&a:0%3B&=N%0A%0A%0A%0ABspace&_a:4%3B&=M%0A%0A%0A%0A1&_f:3%3B&=<%0A,%0A%0A%0A2&=>%0A.%0A%0A%0A3%3B&@_y:-0.75&a:6&w:1.25%3B&=Shift&_a:4&f:6%3B&=Z&_x:13.5&f:3%3B&=%3F%0A%2F%2F%0A%0A%0AEnter&_a:6&w:1.25%3B&=Shift%3B&@_y:-0.25&x:2.25&a:4%3B&=%2F_%0A-%0A%0A%0AEnd&=%7B%0A%5B%0A%0A%0APg%20Up&=%7D%0A%5D%0A%0A%0APg%20Dn&_x:7.5&a:5&f:5%3B&=⇦&=⇩&=⇧%0A%0A%0A%0A.%3B&@_y:-0.75&x:1.25&a:4&f:3%3B&=+%0A%2F=%0A%0A%0AHome&_x:13.5&a:5&f:5%3B&=⇨%0A%0A%0A%0AEnter%3B&@_r:15&rx:5.25&ry:4&x:1.5&a:4&f:3%3B&=Meta%0A⌥&_a:0%3B&=Del%0A%0A%0A%0AInsert%3B&@_x:0.5&a:6&h:2%3B&=Space&_a:4&h:2%3B&=%0A⌃%0A%0A%0A%0A%0ACtrl&_a:6%3B&=Toggle<br>Layer%3B&@_x:2.5&a:4%3B&=Super%0A⌘%3B&@_r:-15&rx:12.75&x:-3.5%3B&=Meta%0A⌥&=Ctrl%0A⌃%3B&@_x:-3.5&a:6%3B&=Tab&_a:7&h:2%3B&=Enter&_a:6&h:2%3B&=Back<br>Space%0A%0A%0A%0A0%3B&@_x:-3.5&a:4%3B&=Super%0A⌘][current Kinesis Advantage2 layout (b&w) | keyboard-layout-editor.com]]
+
+[[http://www.keyboard-layout-editor.com/##@_name=Kinesis%20Advantage2&author=Ryan%20Matlock%3B&@_c=%231c1c1c&t=%23cccccc&f:1&w:0.675&h:0.85%3B&=status%0ACaps<br>Lock&_x:0.07499999999999996&f2:2&w:0.675&h:0.85%3B&=%0AF1&_x:0.07499999999999996&w:0.675&h:0.85%3B&=%0AF2&_x:0.07500000000000018&w:0.675&h:0.85%3B&=qwert%0AF3&_x:0.07500000000000018&w:0.675&h:0.85%3B&=dvork%0AF4&_x:0.07500000000000018&w:0.675&h:0.85%3B&=mac%0AF5&_x:0.07500000000000018&w:0.675&h:0.85%3B&=pc%0AF6&_x:0.07500000000000018&w:0.675&h:0.85%3B&=win%0AF7&_x:0.07500000000000018&w:0.675&h:0.85%3B&=%0AF8%0A%0A%0A%0A%0A%0A%0Aclick<br>TONE&_x:4.825&w:0.675&h:0.85%3B&=RESET%0AF9&_x:0.07499999999999929&w:0.675&h:0.85%3B&=macro<br>speed%0AF10&_x:0.07499999999999929&w:0.675&h:0.85%3B&=progm<br>macro%0AF11&_x:0.07499999999999929&w:0.675&h:0.85%3B&=progm<br>remap%0AF12&_x:0.07499999999999929&w:0.675&h:0.85%3B&=PrintScr%20SysReq&_x:0.07499999999999929&w:0.675&h:0.85%3B&=Scroll<br>lock&_x:0.07499999999999929&w:0.675&h:0.85%3B&=Pause%20Break&_x:0.07499999999999929&w:0.675&h:0.85%3B&=keypad&_x:0.07499999999999929&w:0.675&h:0.85%3B&=progm%3B&@_x:2.25&f:3%3B&=%2F@%0A2&=%23%0A3&=$%0A4&=%25%0A5&_x:5.5%3B&=%5E%0A6&=%2F&%0A7%0A%0A%0ANm%20Lk&=*%0A8%0A%0A%0A%2F=&=(%0A9%0A%0A%0A%2F=%3B&@_y:-0.75&w:1.25%3B&=~%0A%60&=!%0A1&_x:13.5%3B&=)%0A0%0A%0A%0A*&_c=%23999999&t=%23000000&w:1.25%3B&=Meta%0A⌥%3B&@_y:-0.25&x:2.25&c=%231c1c1c&t=%23cccccc&f:6%3B&=W&=E&=R&=T&_x:5.5&a:0%3B&=Y%0A%0A%0A%0ASpace&_a:4%3B&=U%0A%0A%0A%0A7&=I%0A%0A%0A%0A8&=O%0A%0A%0A%0A9%3B&@_y:-0.75&a:6&f:3&w:1.25%3B&=Tab&_a:4&f:6%3B&=Q&_x:13.5%3B&=P%0A%0A%0A%0A-&_f:3&w:1.25%3B&=%7C%0A%5C%3B&@_y:-0.25&x:2.25&c=%230088c8&f:6%3B&=S&=D%0A%0A%0A%0A⏮&=F%0A%0A%0A%0A⏯&_c=%231c1c1c%3B&=G%0A%0A%0A%0A⏭&_x:5.5&c=%230088c8&a:0%3B&=H%0A%0A%0A%0ATab&_a:4%3B&=J%0A%0A%0A%0A4&=K%0A%0A%0A%0A5&=L%0A%0A%0A%0A6%3B&@_y:-0.75&c=%23bc0000&a:2&f:3&w:1.25%3B&=Esc%0A%0A%0A%0AShift%20Layer&_c=%230088c8&a:4&f:6%3B&=A&_x:13.5&c=%231c1c1c&f:3%3B&=%2F:%0A%2F%3B%0A%0A%0A+&_w:1.25%3B&="%0A'%3B&@_y:-0.25&x:2.25&f:6%3B&=X&=C%0A%0A%0A%0AMute&=V%0A%0A%0A%0AVol-&=B%0A%0A%0A%0AVol+&_x:5.5&a:0%3B&=N%0A%0A%0A%0ABspace&_a:4%3B&=M%0A%0A%0A%0A1&_f:3%3B&=<%0A,%0A%0A%0A2&=>%0A.%0A%0A%0A3%3B&@_y:-0.75&a:6&w:1.25%3B&=Shift&_a:4&f:6%3B&=Z&_x:13.5&f:3%3B&=%3F%0A%2F%2F%0A%0A%0AEnter&_a:6&w:1.25%3B&=Shift%3B&@_y:-0.25&x:2.25&a:4%3B&=%2F_%0A-%0A%0A%0AEnd&=%7B%0A%5B%0A%0A%0APg%20Up&=%7D%0A%5D%0A%0A%0APg%20Dn&_x:7.5&a:5&f:5%3B&=⇦&=⇩&=⇧%0A%0A%0A%0A.%3B&@_y:-0.75&x:1.25&a:4&f:3%3B&=+%0A%2F=%0A%0A%0AHome&_x:13.5&a:5&f:5%3B&=⇨%0A%0A%0A%0AEnter%3B&@_r:15&rx:5.25&ry:4&x:1.5&a:4&f:3%3B&=Meta%0A⌥&_a:0%3B&=Del%0A%0A%0A%0AInsert%3B&@_x:0.5&a:6&h:2%3B&=Space&_c=%23afafaf&t=%23000000&a:4&h:2%3B&=%0A⌃%0A%0A%0A%0A%0ACtrl&_c=%237d7d7d&a:6%3B&=Toggle<br>Layer%3B&@_x:2.5&c=%23999999&a:4%3B&=Super%0A⌘%3B&@_r:-15&rx:12.75&x:-3.5&c=%231c1c1c&t=%23cccccc%3B&=Meta%0A⌥&=Ctrl%0A⌃%3B&@_x:-3.5&a:6%3B&=Tab&_c=%23afafaf&t=%23000000&a:7&h:2%3B&=Enter&_c=%231c1c1c&t=%23cccccc&a:6&h:2%3B&=Back<br>Space%0A%0A%0A%0A0%3B&@_x:-3.5&c=%23999999&t=%23000000&a:4%3B&=Super%0A⌘][current Kinesis Advantage2 layout (color) | keyboard-layout-editor.com]]
+
+** TODO COMMENT Changes
+*** TODO Write script to convert from CSV to =qwerty.txt=
+
+* COMMENT Key Actions and Tokens
 
 ** Function Keys
 
