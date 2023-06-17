@@ -55,6 +55,17 @@
     "win\nF7",
     {
       "x": 0.07500000000000018,
+      "fa": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
       "w": 0.675,
       "h": 0.85
     },
@@ -85,28 +96,33 @@
     "progm<br>remap\nF12",
     {
       "x": 0.07499999999999929,
+      "a": 5,
+      "f": 1,
       "w": 0.675,
       "h": 0.85
     },
-    "PrintScr SysReq",
+    "<i class='kb kb-Multimedia-Mute-3'></i>\nprint<br>scrn",
     {
       "x": 0.07499999999999929,
+      "f": 1,
       "w": 0.675,
       "h": 0.85
     },
-    "Scroll<br>lock",
+    "<i class='kb kb-Multimedia-Volume-Down-1'></i>\nscroll<br>lock",
     {
       "x": 0.07499999999999929,
+      "f": 1,
       "w": 0.675,
       "h": 0.85
     },
-    "Pause Break",
+    "<i class='kb kb-Multimedia-Volume-Up-1'></i>\npause<br>break",
     {
       "x": 0.07499999999999929,
+      "a": 4,
       "w": 0.675,
       "h": 0.85
     },
-    "keypad",
+    "keypd",
     {
       "x": 0.07499999999999929,
       "w": 0.675,
@@ -161,7 +177,7 @@
       "x": 5.5,
       "a": 0
     },
-    "Y\n\n\n\nSpace",
+    "Y\n\n\n\nSpc ␣",
     {
       "a": 4
     },
@@ -172,13 +188,11 @@
   [
     {
       "y": -0.75,
-      "a": 6,
       "f": 3,
       "w": 1.25
     },
-    "Tab",
+    "\n↹\n\n\n\n\nTab",
     {
-      "a": 4,
       "f": 6
     },
     "Q",
@@ -206,7 +220,7 @@
       "x": 5.5,
       "a": 0
     },
-    "H\n\n\n\nTab",
+    "H\n\n\n\nTab ↹",
     {
       "a": 4
     },
@@ -217,11 +231,11 @@
   [
     {
       "y": -0.75,
-      "a": 2,
+      "a": 0,
       "f": 3,
       "w": 1.25
     },
-    "Esc\n\n\n\nShift Layer",
+    "⎋\n\n\n\nShift Layer\n\nEsc",
     {
       "a": 4,
       "f": 6
@@ -251,7 +265,7 @@
       "x": 5.5,
       "a": 0
     },
-    "N\n\n\n\nBspace",
+    "N\n\n\n\nBspc ⌫",
     {
       "a": 4
     },
@@ -265,12 +279,10 @@
   [
     {
       "y": -0.75,
-      "a": 6,
       "w": 1.25
     },
-    "Shift",
+    "\n⇧\n\n\n\n\nShift",
     {
-      "a": 4,
       "f": 6
     },
     "Z",
@@ -280,28 +292,26 @@
     },
     "?\n/\n\n\nEnter",
     {
-      "a": 6,
       "w": 1.25
     },
-    "Shift"
+    "\n⇧\n\n\n\n\nShift"
   ],
   [
     {
       "y": -0.25,
-      "x": 2.25,
-      "a": 4
+      "x": 2.25
     },
     "_\n-\n\n\nEnd",
     "{\n[\n\n\nPg Up",
     "}\n]\n\n\nPg Dn",
     {
       "x": 7.5,
-      "a": 5,
+      "a": 7,
       "f": 5
     },
-    "⇦",
-    "⇩",
-    "⇧\n\n\n\n."
+    "←",
+    "↓",
+    "↑\n\n\n\n."
   ],
   [
     {
@@ -313,10 +323,10 @@
     "+\n=\n\n\nHome",
     {
       "x": 13.5,
-      "a": 5,
+      "a": 7,
       "f": 5
     },
-    "⇨\n\n\n\nEnter"
+    "→\n\n\n\nEnter"
   ],
   [
     {
@@ -331,17 +341,16 @@
     {
       "a": 0
     },
-    "Del\n\n\n\nInsert"
+    "Del\n⌦\n\n\nInsert"
   ],
   [
     {
       "x": 0.5,
-      "a": 6,
+      "a": 4,
       "h": 2
     },
-    "Space",
+    "\n␣\n\n\n\n\nSpace",
     {
-      "a": 4,
       "h": 2
     },
     "\n⌃\n\n\n\n\nCtrl",
@@ -364,29 +373,25 @@
       "x": -3.5
     },
     "Meta\n⌥",
-    "Ctrl\n⌃"
+    "Tab\n↹"
   ],
   [
     {
-      "x": -3.5,
-      "a": 6
+      "x": -3.5
     },
-    "Tab",
+    "Ctrl\n⌃",
     {
-      "a": 7,
       "h": 2
     },
-    "Enter",
+    "\n↵\n\n\n\n\nEnter",
     {
-      "a": 6,
       "h": 2
     },
-    "Back<br>Space\n\n\n\n0"
+    "\n⌫\n\n\n0\n\nBack<br>Space"
   ],
   [
     {
-      "x": -3.5,
-      "a": 4
+      "x": -3.5
     },
     "Super\n⌘"
   ]
